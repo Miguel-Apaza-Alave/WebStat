@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Probabilidad</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Probabilidad (Diagrama de árbol)</a>
+      
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">PACE (Arica-Chile)</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Teoría <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Regla de Laplace
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Teorema de la probabilidad Total
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Sucesos Compatibles e Incompatibles
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Glosario de términos
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Diagrama de Árbol
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Ejemplos
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Actividades</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Monedas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Ropa
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Preguntas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Descargar Apuntes
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+     
+
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">          
+         <!--
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button class="btn btn-sm btn-outline-secondary">Share</button>
+                <button class="btn btn-sm btn-outline-secondary">Export</button>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+              </button>
+            </div>
+          </div>
+          
+          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+          -->
+
+
+
+
+
+
+
+
+          
+          <h2>Introducción</h2>
+
+
+          <div class='container'>
+
+              <div class='row'>
+                  <div class='col-12'></div>
+                    <h2>Regla de Laplace</h2>
+                    <p>La regla de Laplace nos permite calcular la probabilidad de un suceso, siempre que los sucesos sean equiprobables. En estas condiciones
+                  , tenemos que:  
+                      <p/>
+                      <p>La probabilidad de un suceso  \(A\) se obtiene dividiendo el número de resultados que forman el suceso \(A\) entre el número de resultados posibles<p/>
+                      <p>El enunciado anterior se expresa matematicamente en la fórmula <p/>  
+                      <div class='col-12'>    
+                          <p> $$P(A) = {casos favorables\over casos posibles}.$$<p/> 
+                          <h4>Observación</h4>
+                        
+                          <div class="alert alert-danger" role="alert"><p>Esta regla sólo funciona cuando todos los casos son equiprobables</p>
+                          </div>
+                      <div/>    
+                  <div/>
+              </div>
+
+              <div class='row'>
+                <div class='col-12'></div>
+                  <h2>Teorema de la probabilidad total</h2>
+                  
+                    <p> Si \(B_{1},B_{2},B_{3},...,B_{k}\) son eventos que constituyen una partición
+                       \(\cup_{i=1}^{k}B_{i}=S\) de \(S\) y \(A\) es otro evento en \(S\), entonces.
+                       </p>
+                    <p>\(P(A)=P(A\cup B_{1}) + P(A\cup B_{2}) + P(A\cup B_{3}) + ... + P(A\cup B_{k}) \)</p>
+                    <div class='row'>
+                      <div class='col-12'>
+                        <h5>Ejemplos 1</h5>
+
+                        <p>
+                          La empresa Chocolates La Delicia recarga sus extintores para incendios con tres empresas diferentes \(A,B\) y \(C\).
+                          De datos históricos se sabe que el porcentaje de cargas defectuosas de \(A,B\) y \(C\) son 3%, 4% y 6% respectivamente.
+                          El procentaje de recargas realizadas por la empresa en cada una de las ha sido 35%, 45% y 20% para \(A,B\) y \(C\) respectivamente.
+                          ayer se recibió un extintor recargado pero se desconoce la procedencia.                                           
+                        </p>   
+                        <p>¿Cuál es la probabilidad de que esté defectuoso?</p>
+                      </div>  
+                    </div>
+
+
+                    <div class='row'>
+                        <div class='col-12'>
+                          <h5>Ejemplo 2</h5>
+  
+                          <p>
+                              Se dispone de tres cajas con bombillas. La primera contiene 10 bombillas, de las cuales hay cuatro fundidas;
+                               en la segunda hay seis bombillas, estando una de ellas fundida, y la tercera caja hay tres bombillas fundidas de un total de ocho.                                                                      
+                          </p>
+                          <p> ¿Cuál es la probabilidad de que al tomar una bombilla al azar de una cualquiera de las cajas, esté fundida?  </p>   
+                          <p>¿Cuál es la probabilidad de que esté defectuoso?</p>
+                          <p>Solución</p>
+                          <p>Definimos los eventos </p>
+                          <p>\(B_{1}=\) 'elegir la caja 1'</p>
+                          <p>\(B_{2}=\)'elegir la caja 2'</p>
+                          <p>\(B_{3}=\)'elegir la caja 3'</p>
+                          <p>\(A=\)'que la bombilla esté fundida'</p>
+                          <p>\(P(A)=P(A|B_{1})+P(A|B_{2})+P(A|B_{3})\)</p>
+                          <p>\(P(A)={1\over 3} \times {4\over 10} + {1\over 3} \times {1\over 6} + {1\over 3} \times {3\over 8}={113\over 360}\)</p>
+                        </div>  
+                      </div>   
+                      
+                      
+                      <div class='row'>
+                          <div class='col-12'>
+                            <h5>Ejemplo 3</h5>
+    
+                            <p>
+                                Una tienda de videojuegos ha hecho un estudio de su mercado obteniendo que el 40 por ciento de las ventas
+                                han sido de videojuegos de acción, un 25 por ciento de videojuegos de simulación y el resto de videojuegos
+                                de aventura. Se ha estimado además, que entre las personas que han comprado videojuegos de acción,
+                                el 25 por ciento eran mujeres, mientras que en el caso de los videojuegos de simulación,
+                                el 65 por ciento de las compras han correspondido a mujeres.
+                                En el caso de los videojuegos de aventuras el porcentaje de compras hechas por hombres ha triplicado al de mujeres.                                                                      
+                            </p>
+                            <p>
+                                La empresa decide elegir un cliente al azar para una campaña de publicidad. Calcula la probabilidad de que sea una mujer.</p>
+                            </p>  
+                            <p>Solución</p>
+                            <p>Definimos los eventos </p>
+                            <p>\(B_{1}=\) 'comprar juego de acción'</p>
+                            <p>\(B_{2}=\)'comprar juego de  simulación'</p>
+                            <p>\(B_{3}=\)'comprar juego de  aventura'</p>
+                            <p>\(A=\)'que el cliente sea mujer'</p>
+                            <p>\(P(A)=P(A|B_{1})+P(A|B_{2})+P(A|B_{3})\)</p>
+                            <p>\(P(A)=0,24 \times 0,25 + 0,25 \times 0,65 + 0,35 \times {1\over 3} \)</p>
+                            <p>\(P(A)={291\over 240}\) <p/>
+                          </div>  
+                      </div>
+                    
+                    
+                      <div class='row'>
+                          <div class='col-12'>
+                            <h5>Ejemplo 4</h5>
+    
+                            <p>
+                                Una pequeña empresa desarrolladora de videojuegos opera con tres grandes regiones de un país: X, Y, Z.
+                                 El 50% de las operaciones las realiza en la región X, el 40% en la región Y,
+                                 mientras que sólo un 10% de las operaciones las realiza en la región Z. Se ha estimado,
+                                  por la larga experiencia, que el tanto por ciento de clientes de la región X que efectúan siempre el pago de los pedidos es del 99%,
+                                   mientras que en la región Y es del 98% y en la región Z del 92%.
+                                                                                                
+                            </p>
+                            <p>Si se elige un cliente al azar, calcula la probabilidad de que sea moroso.</p>
+
+                            <p>Solución</p>
+                            <p>Definimos los eventos </p>
+                            <p>\(B_{1}=\) 'que la región sea X'</p>
+                            <p>\(B_{2}=\)'que la región sea Y'</p>
+                            <p>\(B_{3}=\)'que la región sea Z'</p>
+                            <p>\(A=\)'que el cliente sea moroso'</p>
+                            <p>\(P(A)=P(A|B_{1})+P(A|B_{2})+P(A|B_{3})\)</p>
+                            <p>\(P(A)=0,5 \times 0,01 + 0,4 \times 0,02 + 0,1 \times 0,08 \)</p>
+                            <p>\(P(A)={21\over 1000}\) <p/>
+                          </div>  
+
+
+                      </div>                    
+                  
+                   
+                <div/>
+              </div>
+            
+           <div/> 
+
+          <p>
+          Tiramos tres veces una modena al aire. Queremos saber la probabilidad del
+          suceso \(A_{1}=\)"elegir la caja 1".
+
+          Podemos resolver el problema de dos formas:
+          
+          La primera es calcular el espacio muestral
+          \(\Omega=\{CCC,CC+,C+C,C++,+CC,+C+,++C,+++\}\)
+          <p>Donde los casos favorables son:</p>
+          <p>\(\{CCC,CC+,C+C,+CC\}\). Por lo tanto,</p>
+          <p>\(P(A)={4\over 8}={1\over 2}\)</p>
+          
+          <p>Otra forma de resolver el problema es utilizar un diagramas de árbol</p>
+<!--
+          When $a\ne0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+          $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$-->
+          </p>
+          
+          <div id="plot" style="width: 900px; height: 500px;"></div>
+
+
+        </main>
+      
+   
+
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../dist/js/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+     
+    google.charts.load("current", {packages:["corechart"]});
+    /*
+      google.charts.setOnLoadCallback(drawChart);
+     
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Pac Man', 'Percentage'],
+          ['', 75],
+          ['', 25]
+        ]);
+
+        var options = {
+          legend: 'none',
+          pieSliceText: 'none',
+          pieStartAngle: 135,
+          tooltip: { trigger: 'none' },
+          slices: {
+            0: { color: 'yellow' },
+            1: { color: 'transparent' }
+          }
+        };
+
+        //var chart = new google.visualization.PieChart(document.getElementById('pacman'));
+       // chart.draw(data, options);
+      }
+      */
+    </script>
+    <script>
+    google.charts.load('plot', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Pizza');
+      data.addColumn('number', 'Populartiy');
+      data.addRows([
+      
+        ['X', 50],
+        ['Y', 40],
+        ['Z', 10]
+         // Below limit.
+         // Below limit.
+      ]);
+
+      var options = {
+        title: 'Particiones del espacio muestral',
+        sliceVisibilityThreshold: .2,
+        pieHole: 0.5,
+        pieStartAngle: 0,
+      
+          pieSliceTextStyle: {
+            color: 'black',
+          },
+          legend: 'none'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('plot'));
+      chart.draw(data, options);
+    }
+
+
+    /*
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+
+    */  
+    </script>
+  </body>
+</html>

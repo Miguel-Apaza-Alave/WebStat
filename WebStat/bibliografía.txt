@@ -1,0 +1,13 @@
+
+Ejercicios
+Teorema de la probabilidad total
+    ejemplo 1 https://www.youtube.com/watch?v=3h29_gTdZGQ&t=209s
+    ejemplo 2 https://www.vitutor.com/pro/2/a_16.html
+    ejemplo 3 http://www.dccia.ua.es/~violeta/aplicaciones/probabilidadtotal2012.html 
+    ***
+    ejercicios propuestos
+    https://www.sangakoo.com/es/temas/teorema-de-la-probabilidad-total
+
+
+Bayes
+	https://estadisticageneral.wordpress.com/ejercicios-resueltos/

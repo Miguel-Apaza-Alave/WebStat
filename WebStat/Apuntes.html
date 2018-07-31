@@ -1,0 +1,252 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Probabilidad</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+  </head>
+    <body>
+         <h2>Introducción</h2>
+
+
+         <div class='container'>
+ 
+         <!-- ========== ==========-->
+             <div class='row'>
+                 <div class='col-12'>
+                   <h2>Regla de Laplace</h2>
+                   <p>La regla de Laplace nos permite calcular la probabilidad de un suceso, siempre que los sucesos sean equiprobables. En estas condiciones
+                   , tenemos que:  
+                     <p/>
+                     <p>La probabilidad de un suceso  \(A\) se obtiene dividiendo el número de resultados que forman el suceso \(A\) entre el número de resultados posibles<p/>
+                     <p>El enunciado anterior se expresa matematicamente en la fórmula <p/>  
+                     <div class='col-12'>    
+                         <p> $$P(A) = {casos favorables\over casos posibles}.$$<p/> 
+                         <h4>Observación</h4>
+                         
+                         <div class="alert alert-danger" role="alert"><p>Esta regla sólo funciona cuando todos los casos son equiprobables</p>
+                         </div>
+                     </div>    
+                 </div>
+             </div>
+         <!-- ========== ==========-->
+ 
+             <div class='row'>
+               <div class='col-12'>
+                 <h2>Teorema de la probabilidad total</h2>
+                   
+                   <p> Si \(B_{1},B_{2},B_{3},...,B_{k}\) son eventos que constituyen una partición
+                      \(\cup_{i=1}^{k}B_{i}=S\) de \(S\) y \(A\) es otro evento en \(S\), entonces.
+                      </p>
+                   <p>\(P(A)=P(A\cup B_{1}) + P(A\cup B_{2}) + P(A\cup B_{3}) + ... + P(A\cup B_{k}) \)</p>
+               </div> 
+             </div>  
+ 
+             <!--========== ==========-->
+             <div class='row'>
+               <div class='col-12'>
+                 <h5>Ejemplos 1</h5>
+                 <p>
+                   La empresa Chocolates La Delicia recarga sus extintores para incendios con tres empresas diferentes \(A,B\) y \(C\).
+                   De datos históricos se sabe que el porcentaje de cargas defectuosas de \(A,B\) y \(C\) son 3%, 4% y 6% respectivamente.
+                   El procentaje de recargas realizadas por la empresa en cada una de las ha sido 35%, 45% y 20% para \(A,B\) y \(C\) respectivamente.
+                   ayer se recibió un extintor recargado pero se desconoce la procedencia.                                           
+                 </p>   
+                <p>¿Cuál es la probabilidad de que esté defectuoso?</p>
+               </div>  
+             </div>
+             <!--========== ==========-->
+ 
+             <div class='row'>
+                         <div class='col-12'>
+                           <h5>Ejemplo 2</h5>
+                           <p>
+                               Se dispone de tres cajas con bombillas. La primera contiene 10 bombillas, de las cuales hay cuatro fundidas;
+                                en la segunda hay seis bombillas, estando una de ellas fundida, y la tercera caja hay tres bombillas fundidas de un total de ocho.                                                                      
+                           </p>
+                           <p> ¿Cuál es la probabilidad de que al tomar una bombilla al azar de una cualquiera de las cajas, esté fundida?  </p>   
+                           <p>¿Cuál es la probabilidad de que esté defectuoso?</p>
+                           <p>Solución</p>
+                           <p>Definimos los eventos </p>
+                           <p>\(B_{1}=\) 'elegir la caja 1'</p>
+                           <p>\(B_{2}=\)'elegir la caja 2'</p>
+                           <p>\(B_{3}=\)'elegir la caja 3'</p>
+                           <p>\(A=\)'que la bombilla esté fundida'</p>
+                           <p>\(P(A)=P(A|B_{1})+P(A|B_{2})+P(A|B_{3})\)</p>
+                           <p>\(P(A)={1\over 3} \times {4\over 10} + {1\over 3} \times {1\over 6} + {1\over 3} \times {3\over 8}={113\over 360}\)</p>
+                         </div>  
+             </div>   
+             <!--========== ==========-->                     
+  
+             <div class='row'>
+                 <h5>Ejemplo 3</h5>
+                   <p>
+                      Una tienda de videojuegos ha hecho un estudio de su mercado obteniendo que el 40 por ciento de las ventas
+                      han sido de videojuegos de acción, un 25 por ciento de videojuegos de simulación y el resto de videojuegos
+                      de aventura. Se ha estimado además, que entre las personas que han comprado videojuegos de acción,
+                      el 25 por ciento eran mujeres, mientras que en el caso de los videojuegos de simulación,
+                      el 65 por ciento de las compras han correspondido a mujeres.
+                      En el caso de los videojuegos de aventuras el porcentaje de compras hechas por hombres ha triplicado al de mujeres.                                                                      
+                   </p>
+                   <p>
+                       La empresa decide elegir un cliente al azar para una campaña de publicidad. Calcula la probabilidad de que sea una mujer.</p>
+                   </p>  
+                   <p>Solución</p>
+                   <p>Definimos los eventos </p>
+                   <p>\(B_{1}=\) 'comprar juego de acción'</p>
+                   <p>\(B_{2}=\)'comprar juego de  simulación'</p>
+                   <p>\(B_{3}=\)'comprar juego de  aventura'</p>
+                   <p>\(A=\)'que el cliente sea mujer'</p>
+                   <p>\(P(A)=P(A|B_{1})+P(A|B_{2})+P(A|B_{3})\)</p>
+                   <p>\(P(A)=0,24 \times 0,25 + 0,25 \times 0,65 + 0,35 \times {1\over 3} \)</p>
+                   <p>\(P(A)={291\over 240}\) <p/>
+             </div>
+ 
+ 
+             <!--========== ==========-->
+             <div class='row'>
+                 <div class='col-12'>
+                     <h5>Ejemplo 4</h5>
+    
+                     <p>
+                         Una pequeña empresa desarrolladora de videojuegos opera con tres grandes regiones de un país: X, Y, Z.
+                         El 50% de las operaciones las realiza en la región X, el 40% en la región Y,
+                         mientras que sólo un 10% de las operaciones las realiza en la región Z. Se ha estimado,
+                         por la larga experiencia, que el tanto por ciento de clientes de la región X que efectúan siempre el pago de los pedidos es del 99%,
+                         mientras que en la región Y es del 98% y en la región Z del 92%.
+                     </p>
+                     <p>Si se elige un cliente al azar, calcula la probabilidad de que sea moroso.</p>
+ 
+                     <p>Solución</p>
+                     <p>Definimos los eventos </p>
+                     <p>\(B_{1}=\) 'que la región sea X'</p>
+                     <p>\(B_{2}=\)'que la región sea Y'</p>
+                     <p>\(B_{3}=\)'que la región sea Z'</p>
+                     <p>\(A=\)'que el cliente sea moroso'</p>
+                     <p>\(P(A)=P(A|B_{1})+P(A|B_{2})+P(A|B_{3})\)</p>
+                     <p>\(P(A)=0,5 \times 0,01 + 0,4 \times 0,02 + 0,1 \times 0,08 \)</p>
+                     <p>\(P(A)={21\over 1000}\) <p/>
+                 </div>  
+             </div>                    
+             <!--========== ==========-->                   
+ 
+             <div class='row'>
+                 <div class='col-12'>
+                        <h5>Ejemplo k</h5>
+                        <p>
+                             Tiramos tres veces una modena al aire. Queremos saber la probabilidad del
+                             suceso \(A_{1}=\)"elegir la caja 1".
+                             Podemos resolver el problema de dos formas:
+                             
+                             La primera es calcular el espacio muestral
+                             \(\Omega=\{CCC,CC+,C+C,C++,+CC,+C+,++C,+++\}\)
+                        </p> 
+
+                         <p>Donde los casos favorables son:</p>
+                         <p>\(\{CCC,CC+,C+C,+CC\}\). Por lo tanto,</p>
+                         <p>\(P(A)={4\over 8}={1\over 2}\)</p>
+                              
+                         <p>Otra forma de resolver el problema es utilizar un diagramas de árbol</p>
+                 </div>
+
+             </div>
+
+             <div class='row'>
+                <div class='col-12'>
+                    <h5>Teorema de Bayes</h5>
+                         <p> Si \(B_{1},B_{2},B_{3},...,B_{k}\) son eventos que constituyen una partición del espacio muestral \(S\)
+                             con \(P(B_{i}>0)\) para \(i=1,2,3,...,k\) , entonces para cualquier evento \(A\) en \(S\) tal que
+                             \(P(A)>0 \)
+                            
+                         </p>
+                         <p>\( P(B_{r}|A) =  P(B_{r})P(A|B_{r}) \ over P(B_{i})P(A|B_{i})  \)</p>              
+                </div>        
+             </div>
+             <div class='row'>
+                
+                 <div class='col-12'>
+                     <h5>Ejemplo 1</h5> 
+                     <p>Hay dos métodos, \(A\) y \(B\), para enseñar cierta destreza industrial.
+                     El porcentaje de fracaso del método \(A\) es 20% y el de \(B\) 10%; sin embargo, como el método \(B\) es más cuatro
+                     se aplica sólo 30% del tiempo (el otro 70% se emplea \(A\). ). Una trabajadora recibió capacitación con uno de los métodos pero
+                     no aprendió la destreza.
+                 </p>
+                 <p>¿Cuál es la probabilidad de que se haya enseñado con el método \(A\) ?</p>
+                 <div>
+
+             </div> 
+             
+             <div class='row'>
+                    <div class='col-12'>
+                        <h5>Ejemplo 2</h5>
+                        <p>En la sala de pediatría de un hospital, el 60% de los pacientes son niñas. De los niños el 35%
+                             son menores de 24 meses. El 20% de las niñas tienen menos de 24 meses.
+                              Un pediatra que ingresa a la sala selecciona un infante al azar. </p>
+                    <p>\(A) \) Determine el valor de la probabilidad de que sea menor de 24 meses.</p>
+                    <p>\(B) \) Si el infante resulta ser menor de 24 meses. Determine la probabilidad que sea una niña.</p>
+                    <div>
+   
+             </div>             
+
+             <div class='row'>
+                    <div class='col-12'>
+                        <h5>Desarrollo</h5>
+                        <p>\(A\)='que el paciente sea una niña' )</p>
+                        <p>\(B\)='que el paciente sea un niño' )</p>
+                        <p>\(C\)='que el paciente sea menor de 24 meses'</p>
+
+                        <p>El problema se resuelve utilizando la regla de la probabilidad total</p>}
+                        <p>\(P(C)=P(A)P(C|A) + P(B)P(C|B)\)</p>
+
+                    <div>
+   
+             </div>
+
+             
+         <div/> <!-- container -->
+ 
+
+
+
+     </body>
+
+        <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    </html>     
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
